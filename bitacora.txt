@@ -1,11 +1,20 @@
 ﻿%%==================================================================%%
 %%                 Métodos de Desarrollo - Test de Git              %%
 %%==================================================================%%
-%% Alumno (Apellidos, Nombre):                                      %%
+%% Alumno (Apellidos, Nombre): Sañudo Martínez, Santiago            %%
 %%==================================================================%%
 
  Paso   Acción                       Notas
 ====== ============================ ================================
+(03)	git checkout -b Historia000
+(04)	git checkout -b Historia001
+(05)	git checkout Historia000
+(07)	git add bitacora.txt
+(08)	git commit -m "Paso 08"
+(09)	git checkout Historia001
+(11)	git stash y git checkout Historia000
+(16)	git stash apply stash@{0}
+(20)	git merge Historia000		Merge recursivo
 (25)	git merge Historia001		Merge Fast-Forward
 (27)	git tag -m "RespuestaPreguntaFusion"
 (28)	git fetch, git pull, git push 			Con este comando subimos todas la ramas y etiquetas, sin embargo, falla debido
@@ -13,4 +22,4 @@
 							por tanto debemos realizar git fetch para ver que ha modificado en sus commits.
 							Posteriormente, realizamos un git pull para realizar un merge de sus contenidos con
 							los nuestros, y al no haber conflictos, el merge es de tipo Recursivo.
-					
+(31)	git merge Historia001		Merge recursivo
