@@ -7,3 +7,10 @@
  Paso   Acción                       Notas
 ====== ============================ ================================
 (25)	git merge Historia001		Merge Fast-Forward
+(27)	git tag -m "RespuestaPreguntaFusion"
+(28)	git fetch, git pull, git push 			Con este comando subimos todas la ramas y etiquetas, sin embargo, falla debido
+							a que en master otro usuario ha realiado varios push mientras estabamos trabajando,
+							por tanto debemos realizar git fetch para ver que ha modificado en sus commits.
+							Posteriormente, realizamos un git pull para realizar un merge de sus contenidos con
+							los nuestros, y al no haber conflictos, el merge es de tipo Recursivo.
+					
